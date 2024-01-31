@@ -1,0 +1,175 @@
+[
+    {
+        "members": [
+            {
+                "name": "x",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "y",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Position",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "inputs": [
+            {
+                "name": "user",
+                "type": "felt"
+            }
+        ],
+        "name": "get_balance",
+        "outputs": [
+            {
+                "name": "res",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "startHash",
+                "type": "felt"
+            },
+            {
+                "name": "moves_len",
+                "type": "felt"
+            },
+            {
+                "name": "moves",
+                "type": "felt*"
+            }
+        ],
+        "name": "validateGame",
+        "outputs": [
+            {
+                "name": "pos",
+                "type": "Position"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "moves_len",
+                "type": "felt"
+            },
+            {
+                "name": "moves",
+                "type": "felt*"
+            },
+            {
+                "name": "startHash",
+                "type": "felt"
+            }
+        ],
+        "name": "notarize",
+        "outputs": [
+            {
+                "name": "res",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "moves_len",
+                "type": "felt"
+            },
+            {
+                "name": "moves",
+                "type": "felt*"
+            },
+            {
+                "name": "address",
+                "type": "felt"
+            },
+            {
+                "name": "startHash",
+                "type": "felt"
+            }
+        ],
+        "name": "D_showFinalState",
+        "outputs": [
+            {
+                "name": "finalPos",
+                "type": "Position"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "address",
+                "type": "felt"
+            },
+            {
+                "name": "startHash",
+                "type": "felt"
+            }
+        ],
+        "name": "showInitState",
+        "outputs": [
+            {
+                "name": "pos",
+                "type": "Position"
+            },
+            {
+                "name": "yVelocity",
+                "type": "felt"
+            },
+            {
+                "name": "pipesOffset_len",
+                "type": "felt"
+            },
+            {
+                "name": "pipesOffset",
+                "type": "felt*"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "seed",
+                "type": "felt"
+            },
+            {
+                "name": "maxValue",
+                "type": "felt"
+            },
+            {
+                "name": "howMany",
+                "type": "felt"
+            }
+        ],
+        "name": "getValuesFromSeed",
+        "outputs": [
+            {
+                "name": "values_len",
+                "type": "felt"
+            },
+            {
+                "name": "values",
+                "type": "felt*"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
