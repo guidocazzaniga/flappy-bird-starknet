@@ -1,4 +1,4 @@
-# A Decentralized Approach to Award Game Achievements - PoC 
+# Flappy Bird on Starknet! 
 
 ## Getting started
 
